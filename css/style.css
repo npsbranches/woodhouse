@@ -149,11 +149,12 @@ textarea {
     flex-basis: 100%;
     border-top: 1px solid #EFEFEF;
     border-bottom: 1px solid #EFEFEF;
-    height: 50px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 5px 15px;
 }
 
 .menu ul {
@@ -179,6 +180,10 @@ textarea {
 
 .menu ul li a:hover {
     color: #9B9B9B;
+}
+
+.menu .search {
+    display: none;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -401,6 +406,17 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
+    .search {
+        display: none;
+    }
+
+    .menu {
+        justify-content: flex-start;
+    }
+
+    .menu .search  {
+        display: block;
+    }
     .showcase .wrapper {
         flex-direction: column;
     }
