@@ -505,6 +505,7 @@ textarea {
             -ms-flex-direction: column;
                 flex-direction: column;
         top: 46px;
+        left: 0;
         width: 100%;
         -webkit-box-align: start;
             -ms-flex-align: start;
